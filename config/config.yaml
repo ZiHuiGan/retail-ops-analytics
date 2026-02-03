@@ -1,0 +1,34 @@
+# Retail Ops Analytics - Configuration
+
+project:
+  name: "Retail Ops Analytics"
+  version: "1.0.0"
+  description: "Campus dining analytics ELT pipeline"
+  
+bigquery:
+  project_id: "retail-ops-analytics"
+  location: "US"
+  datasets:
+    raw: "raw_cvu_dining"
+    staging: "staging_cvu_dining"
+    dev: "dev_cvu_dining"
+  credentials_path: "config/gcp-service-account.json"
+
+fiscal_calendar:
+  week_start_day: "thursday"
+  week_cutoff_hour: 4
+  academic_year: "2025-2026"
+
+data_sources:
+  grubhub:
+    format: "csv"
+    frequency: "daily"
+    cumulative: true
+  mashgin:
+    format: "json"
+    frequency: "hourly"
+    timezone: "UTC"
+  dining_hall:
+    format: "csv"
+    frequency: "daily"
+    header_row: 3

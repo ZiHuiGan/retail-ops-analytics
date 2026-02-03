@@ -1,0 +1,102 @@
+# Cascade Valley University - Meal Plan Configuration
+# Academic Year 2025-2026
+
+meal_plans:
+  - plan_id: "CVU-MP-001"
+    plan_name: "Unlimited Access"
+    plan_type: "unlimited"
+    description: "Unlimited swipes to dining halls per semester"
+    meals_per_week: null
+    meals_per_semester: null
+    dining_points_per_semester: 280.00
+    convenience_points_per_semester: 0.00
+    guest_meals_included: 10
+    price_per_semester: 3590.00
+    academic_year: "2025-2026"
+    target_audience: "residential_students"
+    
+  - plan_id: "CVU-MP-002"
+    plan_name: "Unlimited Access Plus"
+    plan_type: "unlimited"
+    description: "Unlimited dining hall access with extra points"
+    meals_per_week: null
+    meals_per_semester: null
+    dining_points_per_semester: 500.00
+    convenience_points_per_semester: 0.00
+    guest_meals_included: 10
+    price_per_semester: 3805.00
+    academic_year: "2025-2026"
+    target_audience: "residential_students"
+    
+  - plan_id: "CVU-MP-003"
+    plan_name: "Flex 10 Plus"
+    plan_type: "weekly"
+    description: "10 meals per week with maximum dining points"
+    meals_per_week: 10
+    meals_per_semester: null
+    dining_points_per_semester: 830.00
+    convenience_points_per_semester: 0.00
+    guest_meals_included: 10
+    price_per_semester: 3805.00
+    academic_year: "2025-2026"
+    target_audience: "residential_students"
+    weekly_reset_day: "thursday"
+    weekly_reset_time: "04:00:00"
+    
+  - plan_id: "CVU-MP-004"
+    plan_name: "Specialty Dining"
+    plan_type: "weekly"
+    description: "11 meals per week for dietary accommodations"
+    meals_per_week: 11
+    meals_per_semester: null
+    dining_points_per_semester: 390.00
+    convenience_points_per_semester: 0.00
+    guest_meals_included: 10
+    price_per_semester: 3590.00
+    academic_year: "2025-2026"
+    target_audience: "dietary_restrictions"
+    
+  - plan_id: "CVU-MP-005"
+    plan_name: "Off-Campus 50"
+    plan_type: "semester"
+    description: "50 dining hall meals per semester for off-campus students"
+    meals_per_week: null
+    meals_per_semester: 50
+    dining_points_per_semester: 0.00
+    convenience_points_per_semester: 250.00
+    guest_meals_included: 0
+    price_per_semester: 905.00
+    academic_year: "2025-2026"
+    target_audience: "off_campus_students"
+    
+  - plan_id: "CVU-MP-006"
+    plan_name: "Off-Campus 50 Plus"
+    plan_type: "semester"
+    description: "50 meals with extra convenience points"
+    meals_per_week: null
+    meals_per_semester: 50
+    dining_points_per_semester: 0.00
+    convenience_points_per_semester: 500.00
+    guest_meals_included: 0
+    price_per_semester: 1155.00
+    academic_year: "2025-2026"
+    target_audience: "off_campus_students"
+    
+  - plan_id: "CVU-MP-007"
+    plan_name: "Off-Campus 75 Plus"
+    plan_type: "semester"
+    description: "75 meals with extra convenience points"
+    meals_per_week: null
+    meals_per_semester: 75
+    dining_points_per_semester: 0.00
+    convenience_points_per_semester: 500.00
+    guest_meals_included: 0
+    price_per_semester: 1480.00
+    academic_year: "2025-2026"
+    target_audience: "off_campus_students"
+
+# Notes:
+# - Dining Points: Can be used at dining halls and retail locations
+# - Convenience Points: Can be used at retail locations and smart kiosks only
+# - Guest Meals: Can be used to bring friends/family to dining halls
+# - Weekly Reset: Flex 10 Plus resets every Thursday at 4:00 AM (fiscal week start)

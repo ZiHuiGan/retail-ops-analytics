@@ -205,3 +205,52 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ============================================
+# Project Specific - Retail Ops Analytics
+# ============================================
+
+# Credentials (NEVER COMMIT!)
+config/gcp-service-account.json
+config/*.json
+*.json
+!data/seed/*.json
+.env
+.env.*
+
+# Data files (too large for git)
+data/raw/**
+data/staging/**
+data/processed/**
+*.csv
+!data/seed/*.csv
+
+# dbt
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
+dbt/profiles.yml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+venv/
+.venv/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store

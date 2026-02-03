@@ -1,0 +1,17 @@
+location_id,location_name,category,subcategory,building,profit_center,accepts_meal_plan,accepts_dining_points,accepts_convenience_points,accepts_cash,accepts_credit,operating_hours,seating_capacity
+CVU-R001,Starbucks @ Student Center,Retail,Commercial Brand,Student Center,50100,TRUE,TRUE,TRUE,TRUE,TRUE,Mon-Fri 7am-9pm; Sat-Sun 8am-8pm,45
+CVU-R002,Panda Express @ Student Center,Retail,Commercial Brand,Student Center,50101,TRUE,TRUE,TRUE,TRUE,TRUE,Mon-Sun 10:30am-9pm,60
+CVU-R003,Chipotle @ Student Center,Retail,Commercial Brand,Student Center,50102,TRUE,TRUE,TRUE,TRUE,TRUE,Mon-Sun 10:30am-10pm,50
+CVU-R004,Subway @ North Campus,Retail,Commercial Brand,North Residential,50103,TRUE,TRUE,TRUE,TRUE,TRUE,Mon-Sun 9am-10pm,30
+CVU-R005,Valley Cafe,Retail,Campus Cafe,Student Center,50200,TRUE,TRUE,TRUE,TRUE,TRUE,Mon-Fri 7am-6pm; Sat-Sun 9am-5pm,40
+CVU-R006,Engineering Lounge,Retail,Campus Cafe,Engineering Building,50201,TRUE,FALSE,TRUE,TRUE,TRUE,Mon-Fri 7am-11pm; Sat-Sun 9am-9pm,25
+CVU-R007,Late Night @ North,Retail,Late Night,North Residential,50300,TRUE,TRUE,TRUE,TRUE,TRUE,Sun-Thu 8pm-2am,35
+CVU-R008,Late Night @ South,Retail,Late Night,South Residential,50301,TRUE,TRUE,TRUE,TRUE,TRUE,Sun-Thu 8pm-2am,35
+CVU-D001,Cascade Dining Hall,Dining Hall,Residential,North Residential,60100,TRUE,FALSE,FALSE,TRUE,TRUE,Mon-Sun 7am-9pm,450
+CVU-D002,Mountainview Dining Hall,Dining Hall,Residential,South Residential,60101,TRUE,FALSE,FALSE,TRUE,TRUE,Mon-Sun 7am-9pm,380
+CVU-D003,Riverside Dining Hall,Dining Hall,Residential,West Campus,60102,TRUE,FALSE,FALSE,TRUE,TRUE,Mon-Sun 7am-9pm,320
+CVU-K001,Smart Kiosk #1,Smart Kiosk,Unmanned,Main Library,70100,FALSE,FALSE,TRUE,FALSE,TRUE,24/7,0
+CVU-K002,Smart Kiosk #2,Smart Kiosk,Unmanned,Student Center,70101,FALSE,FALSE,TRUE,FALSE,TRUE,24/7,0
+CVU-K003,Smart Kiosk #3,Smart Kiosk,Unmanned,Rec Center,70102,FALSE,FALSE,TRUE,FALSE,TRUE,24/7,0
+CVU-K004,Smart Kiosk #4,Smart Kiosk,Unmanned,Engineering Building,70103,FALSE,FALSE,TRUE,FALSE,TRUE,24/7,0
+CVU-K005,Smart Kiosk #5,Smart Kiosk,Unmanned,Medical Sciences,70104,FALSE,FALSE,TRUE,FALSE,TRUE,24/7,0

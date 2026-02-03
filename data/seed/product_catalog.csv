@@ -1,0 +1,186 @@
+product_id,product_name,category,subcategory,location_type,base_price,size,dietary_tags,allergens,calories,description
+STB-001,Brewed Coffee,Hot Beverage,Coffee,Starbucks,2.95,Tall,Vegan,,5,Freshly brewed Pike Place Roast
+STB-002,Brewed Coffee,Hot Beverage,Coffee,Starbucks,3.45,Grande,Vegan,,5,Freshly brewed Pike Place Roast
+STB-003,Brewed Coffee,Hot Beverage,Coffee,Starbucks,3.95,Venti,Vegan,,10,Freshly brewed Pike Place Roast
+STB-004,Caffe Latte,Hot Beverage,Espresso,Starbucks,4.95,Grande,Vegetarian,Dairy,190,Espresso with steamed milk
+STB-005,Caramel Macchiato,Hot Beverage,Espresso,Starbucks,5.65,Grande,Vegetarian,Dairy,250,Vanilla-flavored espresso marked with caramel
+STB-006,Vanilla Latte,Hot Beverage,Espresso,Starbucks,5.25,Grande,Vegetarian,Dairy,250,Espresso with vanilla and steamed milk
+STB-007,Cappuccino,Hot Beverage,Espresso,Starbucks,4.65,Grande,Vegetarian,Dairy,140,Espresso with foamed milk
+STB-008,Flat White,Hot Beverage,Espresso,Starbucks,5.25,Grande,Vegetarian,Dairy,220,Ristretto shots with steamed whole milk
+STB-009,Americano,Hot Beverage,Espresso,Starbucks,3.65,Grande,Vegan,,15,Espresso shots with hot water
+STB-010,Mocha,Hot Beverage,Espresso,Starbucks,5.45,Grande,Vegetarian,Dairy,360,Espresso with mocha sauce and steamed milk
+STB-011,White Chocolate Mocha,Hot Beverage,Espresso,Starbucks,5.75,Grande,Vegetarian,Dairy,430,Espresso with white chocolate and steamed milk
+STB-012,Pumpkin Spice Latte,Hot Beverage,Seasonal,Starbucks,5.95,Grande,Vegetarian,Dairy,380,Fall seasonal favorite with pumpkin and spice
+STB-013,Chai Tea Latte,Hot Beverage,Tea,Starbucks,5.25,Grande,Vegetarian,Dairy,240,Black tea with warm spices and steamed milk
+STB-014,Matcha Green Tea Latte,Hot Beverage,Tea,Starbucks,5.45,Grande,Vegan Option,Dairy (can sub),240,Matcha powder with steamed milk
+STB-015,Hot Chocolate,Hot Beverage,Other,Starbucks,4.25,Grande,Vegetarian,Dairy,370,Steamed milk with mocha sauce
+STB-016,Iced Coffee,Cold Beverage,Coffee,Starbucks,3.65,Grande,Vegan,,5,Freshly brewed and chilled
+STB-017,Cold Brew,Cold Beverage,Coffee,Starbucks,4.45,Grande,Vegan,,5,Slow-steeped for 20 hours
+STB-018,Vanilla Sweet Cream Cold Brew,Cold Beverage,Coffee,Starbucks,5.25,Grande,Vegetarian,Dairy,110,Cold brew with vanilla sweet cream
+STB-019,Nitro Cold Brew,Cold Beverage,Coffee,Starbucks,5.25,Grande,Vegan,,5,Nitrogen-infused cold brew
+STB-020,Iced Caramel Macchiato,Cold Beverage,Espresso,Starbucks,5.75,Grande,Vegetarian,Dairy,250,Iced espresso with vanilla and caramel
+STB-021,Iced Vanilla Latte,Cold Beverage,Espresso,Starbucks,5.25,Grande,Vegetarian,Dairy,190,Iced espresso with vanilla
+STB-022,Iced Americano,Cold Beverage,Espresso,Starbucks,3.95,Grande,Vegan,,15,Espresso shots with cold water and ice
+STB-023,Iced Mocha,Cold Beverage,Espresso,Starbucks,5.75,Grande,Vegetarian,Dairy,350,Iced espresso with mocha sauce
+STB-024,Iced Shaken Espresso,Cold Beverage,Espresso,Starbucks,5.45,Grande,Vegan Option,Dairy (can sub),100,Shaken espresso with ice
+STB-025,Brown Sugar Oatmilk Shaken Espresso,Cold Beverage,Espresso,Starbucks,6.25,Grande,Vegan,Oat milk,120,Espresso with brown sugar and oat milk
+STB-026,Refreshers - Strawberry Acai,Cold Beverage,Refresher,Starbucks,5.25,Grande,Vegan,,90,Fruit juice with green coffee extract
+STB-027,Refreshers - Mango Dragonfruit,Cold Beverage,Refresher,Starbucks,5.25,Grande,Vegan,,90,Tropical fruit refresher
+STB-028,Refreshers - Very Berry Hibiscus,Cold Beverage,Refresher,Starbucks,5.25,Grande,Vegan,,60,Berry hibiscus refresher
+STB-029,Frappuccino - Caramel,Cold Beverage,Frappuccino,Starbucks,5.95,Grande,Vegetarian,Dairy,420,Blended caramel coffee drink
+STB-030,Frappuccino - Mocha,Cold Beverage,Frappuccino,Starbucks,5.95,Grande,Vegetarian,Dairy,410,Blended mocha coffee drink
+STB-031,Frappuccino - Vanilla Bean,Cold Beverage,Frappuccino,Starbucks,5.45,Grande,Vegetarian,Dairy,400,Blended creme frappuccino
+STB-032,Frappuccino - Strawberry,Cold Beverage,Frappuccino,Starbucks,5.45,Grande,Vegetarian,Dairy,370,Blended strawberry creme
+STB-033,Bacon Gouda Breakfast Sandwich,Food,Breakfast,Starbucks,5.95,Regular,Contains Meat,Dairy|Gluten|Egg,350,Bacon with aged Gouda on artisan roll
+STB-034,Sausage Cheddar & Egg Sandwich,Food,Breakfast,Starbucks,5.45,Regular,Contains Meat,Dairy|Gluten|Egg|Pork,480,Sausage patty with cheddar and egg
+STB-035,Spinach Feta Wrap,Food,Breakfast,Starbucks,5.75,Regular,Vegetarian,Dairy|Gluten|Egg,290,Spinach feta and egg white wrap
+STB-036,Double-Smoked Bacon Sandwich,Food,Breakfast,Starbucks,6.25,Regular,Contains Meat,Dairy|Gluten|Egg,500,Double-smoked bacon with cheddar
+STB-037,Impossible Breakfast Sandwich,Food,Breakfast,Starbucks,5.95,Regular,Plant-Based,Gluten|Egg,430,Plant-based sausage with egg and cheese
+STB-038,Butter Croissant,Food,Bakery,Starbucks,3.45,Regular,Vegetarian,Dairy|Gluten,310,Buttery flaky croissant
+STB-039,Chocolate Croissant,Food,Bakery,Starbucks,4.25,Regular,Vegetarian,Dairy|Gluten,330,Croissant with chocolate
+STB-040,Blueberry Muffin,Food,Bakery,Starbucks,3.75,Regular,Vegetarian,Dairy|Gluten|Egg,360,Moist blueberry muffin
+STB-041,Lemon Loaf,Food,Bakery,Starbucks,3.95,Regular,Vegetarian,Dairy|Gluten|Egg,470,Iced lemon pound cake
+STB-042,Banana Bread,Food,Bakery,Starbucks,3.45,Regular,Vegetarian,Dairy|Gluten|Egg,420,Moist banana bread slice
+STB-043,Cake Pop - Birthday Cake,Food,Bakery,Starbucks,2.95,Regular,Vegetarian,Dairy|Gluten|Egg,170,Birthday cake flavored pop
+STB-044,Cookie - Chocolate Chip,Food,Bakery,Starbucks,2.95,Regular,Vegetarian,Dairy|Gluten|Egg,370,Classic chocolate chip cookie
+STB-045,Bagel with Cream Cheese,Food,Bakery,Starbucks,4.45,Regular,Vegetarian,Dairy|Gluten,350,Plain bagel with cream cheese
+STB-046,Protein Box - Eggs & Cheese,Food,Protein Box,Starbucks,6.25,Regular,Vegetarian,Dairy|Egg,470,Hard-boiled eggs with cheese and fruit
+STB-047,Protein Box - Cheese & Fruit,Food,Protein Box,Starbucks,5.75,Regular,Vegetarian,Dairy,470,Cheese cubes with grapes and crackers
+STB-048,Protein Box - PB&J,Food,Protein Box,Starbucks,5.75,Regular,Vegetarian,Peanuts|Gluten,520,Peanut butter and jelly with fruit
+PAN-001,Orange Chicken Bowl,Entree,Signature,Panda Express,9.50,Bowl,Contains Gluten,Gluten|Soy,490,Crispy chicken in sweet orange sauce
+PAN-002,Orange Chicken Plate,Entree,Signature,Panda Express,11.25,Plate,Contains Gluten,Gluten|Soy,490,Crispy chicken in sweet orange sauce
+PAN-003,Beijing Beef Bowl,Entree,Beef,Panda Express,10.25,Bowl,Contains Gluten,Gluten|Soy,480,Crispy beef with bell peppers and onions
+PAN-004,Beijing Beef Plate,Entree,Beef,Panda Express,12.00,Plate,Contains Gluten,Gluten|Soy,480,Crispy beef with bell peppers and onions
+PAN-005,Kung Pao Chicken Bowl,Entree,Chicken,Panda Express,9.50,Bowl,Contains Peanuts,Peanuts|Soy,290,Spicy chicken with peanuts
+PAN-006,Kung Pao Chicken Plate,Entree,Chicken,Panda Express,11.25,Plate,Contains Peanuts,Peanuts|Soy,290,Spicy chicken with peanuts
+PAN-007,Broccoli Beef Bowl,Entree,Beef,Panda Express,9.95,Bowl,None,Soy,150,Tender beef with fresh broccoli
+PAN-008,Broccoli Beef Plate,Entree,Beef,Panda Express,11.70,Plate,None,Soy,150,Tender beef with fresh broccoli
+PAN-009,Honey Walnut Shrimp Bowl,Entree,Premium,Panda Express,11.95,Bowl,Contains Nuts,Tree Nuts|Soy|Shellfish,360,Crispy shrimp with honey sauce and walnuts
+PAN-010,Honey Walnut Shrimp Plate,Entree,Premium,Panda Express,13.70,Plate,Contains Nuts,Tree Nuts|Soy|Shellfish,360,Crispy shrimp with honey sauce and walnuts
+PAN-011,Mushroom Chicken Bowl,Entree,Chicken,Panda Express,9.50,Bowl,None,Soy,220,Chicken breast with mushrooms
+PAN-012,Mushroom Chicken Plate,Entree,Chicken,Panda Express,11.25,Plate,None,Soy,220,Chicken breast with mushrooms
+PAN-013,String Bean Chicken Breast Bowl,Entree,Chicken,Panda Express,9.50,Bowl,None,Soy,190,White meat chicken with string beans
+PAN-014,String Bean Chicken Breast Plate,Entree,Chicken,Panda Express,11.25,Plate,None,Soy,190,White meat chicken with string beans
+PAN-015,Black Pepper Chicken Bowl,Entree,Chicken,Panda Express,9.50,Bowl,None,Soy,280,Marinated chicken with black pepper sauce
+PAN-016,Black Pepper Chicken Plate,Entree,Chicken,Panda Express,11.25,Plate,None,Soy,280,Marinated chicken with black pepper sauce
+PAN-017,Black Pepper Angus Steak Bowl,Entree,Premium,Panda Express,11.70,Bowl,None,Soy,180,Premium angus steak with black pepper
+PAN-018,Black Pepper Angus Steak Plate,Entree,Premium,Panda Express,13.45,Plate,None,Soy,180,Premium angus steak with black pepper
+PAN-019,Grilled Teriyaki Chicken Bowl,Entree,Chicken,Panda Express,9.95,Bowl,None,Soy|Gluten,300,Grilled chicken with teriyaki glaze
+PAN-020,Grilled Teriyaki Chicken Plate,Entree,Chicken,Panda Express,11.70,Plate,None,Soy|Gluten,300,Grilled chicken with teriyaki glaze
+PAN-021,SweetFire Chicken Breast Bowl,Entree,Chicken,Panda Express,9.95,Bowl,None,Soy,380,Sweet and spicy pineapple chicken
+PAN-022,SweetFire Chicken Breast Plate,Entree,Chicken,Panda Express,11.70,Plate,None,Soy,380,Sweet and spicy pineapple chicken
+PAN-023,Chow Mein,Side,Noodles,Panda Express,4.60,Side,None,Gluten|Soy,510,Stir-fried wheat noodles with vegetables
+PAN-024,Fried Rice,Side,Rice,Panda Express,4.30,Side,None,Soy|Egg,520,Wok-tossed rice with soy sauce
+PAN-025,White Steamed Rice,Side,Rice,Panda Express,3.50,Side,Vegan,,380,Steamed white rice
+PAN-026,Super Greens,Side,Vegetable,Panda Express,4.95,Side,Vegan,,90,Broccoli kale and cabbage
+PAN-027,Vegetable Spring Roll,Appetizer,Roll,Panda Express,2.95,2 pieces,Vegan,Gluten,160,Crispy vegetable spring rolls
+PAN-028,Cream Cheese Rangoon,Appetizer,Rangoon,Panda Express,3.45,3 pieces,Vegetarian,Dairy|Gluten,190,Wonton with cream cheese filling
+PAN-029,Chicken Egg Roll,Appetizer,Roll,Panda Express,3.25,1 piece,Contains Meat,Gluten|Soy|Egg,200,Crispy chicken egg roll
+PAN-030,Apple Pie Roll,Dessert,Dessert,Panda Express,3.95,1 piece,Vegetarian,Gluten,150,Crispy apple pie dessert roll
+CHP-001,Chicken Bowl,Entree,Protein,Chipotle,10.50,Bowl,Gluten-Free,,500,Adobo-marinated grilled chicken
+CHP-002,Steak Bowl,Entree,Protein,Chipotle,12.25,Bowl,Gluten-Free,,510,Grilled steak
+CHP-003,Carnitas Bowl,Entree,Protein,Chipotle,11.75,Bowl,Gluten-Free,Contains Pork,500,Slow-cooked pork
+CHP-004,Barbacoa Bowl,Entree,Protein,Chipotle,12.25,Bowl,Gluten-Free,,505,Braised beef
+CHP-005,Sofritas Bowl,Entree,Plant-Based,Chipotle,10.25,Bowl,Vegan,,540,Organic braised tofu
+CHP-006,Veggie Bowl,Entree,Vegetarian,Chipotle,9.95,Bowl,Vegan,,540,Fajita vegetables with guacamole
+PAN-007,Chicken Burrito,Entree,Protein,Chipotle,10.50,Burrito,None,Gluten,1000,Adobo-marinated chicken in flour tortilla
+CHP-008,Steak Burrito,Entree,Protein,Chipotle,12.25,Burrito,None,Gluten,1015,Grilled steak in flour tortilla
+CHP-009,Carnitas Burrito,Entree,Protein,Chipotle,11.75,Burrito,None,Gluten|Pork,1000,Slow-cooked pork in flour tortilla
+CHP-010,Sofritas Burrito,Entree,Plant-Based,Chipotle,10.25,Burrito,Vegan Option,Gluten,1040,Organic tofu in flour tortilla
+CHP-011,Chicken Tacos,Entree,Protein,Chipotle,10.50,3 Tacos,Gluten-Free Option,,575,Three soft or crispy tacos with chicken
+CHP-012,Steak Tacos,Entree,Protein,Chipotle,12.25,3 Tacos,Gluten-Free Option,,585,Three soft or crispy tacos with steak
+CHP-013,Chips,Side,Chip,Chipotle,1.95,Regular,Vegan,,540,Fresh-fried tortilla chips
+CHP-014,Chips & Guacamole,Side,Chip,Chipotle,4.95,Regular,Vegan,,770,Chips with fresh guacamole
+CHP-015,Chips & Queso,Side,Chip,Chipotle,5.45,Regular,Vegetarian,Dairy,780,Chips with warm queso
+CHP-016,Chips & Salsa,Side,Chip,Chipotle,2.95,Regular,Vegan,,570,Chips with fresh tomato salsa
+CHP-017,Kids Quesadilla,Kids Meal,Kids,Chipotle,5.25,Kids,Vegetarian,Dairy|Gluten,445,Cheese quesadilla
+CHP-018,Kids Build Your Own,Kids Meal,Kids,Chipotle,6.50,Kids,Customizable,,varies,Choice of protein and toppings
+SUB-001,Turkey & Cheese 6inch,Sandwich,6 inch,Subway,7.50,6 inch,None,Gluten|Dairy,280,Turkey breast with cheese
+SUB-002,Turkey & Cheese Footlong,Sandwich,Footlong,Subway,11.50,Footlong,None,Gluten|Dairy,560,Turkey breast with cheese
+SUB-003,Italian BMT 6inch,Sandwich,6 inch,Subway,8.25,6 inch,Contains Pork,Gluten|Dairy|Pork,410,Pepperoni salami and ham
+SUB-004,Italian BMT Footlong,Sandwich,Footlong,Subway,12.50,Footlong,Contains Pork,Gluten|Dairy|Pork,820,Pepperoni salami and ham
+SUB-005,Subway Club 6inch,Sandwich,6 inch,Subway,7.95,6 inch,None,Gluten|Dairy,310,Turkey roast beef and ham
+SUB-006,Subway Club Footlong,Sandwich,Footlong,Subway,12.25,Footlong,None,Gluten|Dairy,620,Turkey roast beef and ham
+SUB-007,Veggie Delite 6inch,Sandwich,6 inch,Subway,6.50,6 inch,Vegan,Gluten,230,Fresh vegetables
+SUB-008,Veggie Delite Footlong,Sandwich,Footlong,Subway,9.50,Footlong,Vegan,Gluten,460,Fresh vegetables
+SUB-009,Tuna 6inch,Sandwich,6 inch,Subway,7.95,6 inch,Contains Fish,Gluten|Dairy|Fish,470,Tuna salad
+SUB-010,Tuna Footlong,Sandwich,Footlong,Subway,12.25,Footlong,Contains Fish,Gluten|Dairy|Fish,940,Tuna salad
+SUB-011,Chicken Teriyaki 6inch,Sandwich,6 inch,Subway,8.50,6 inch,None,Gluten|Soy,370,Grilled chicken with teriyaki
+SUB-012,Chicken Teriyaki Footlong,Sandwich,Footlong,Subway,13.00,Footlong,None,Gluten|Soy,740,Grilled chicken with teriyaki
+SUB-013,Meatball Marinara 6inch,Sandwich,6 inch,Subway,7.25,6 inch,Contains Meat,Gluten|Dairy,480,Meatballs in marinara sauce
+SUB-014,Meatball Marinara Footlong,Sandwich,Footlong,Subway,11.00,Footlong,Contains Meat,Gluten|Dairy,960,Meatballs in marinara sauce
+SUB-015,Steak & Cheese 6inch,Sandwich,6 inch,Subway,8.95,6 inch,None,Gluten|Dairy,380,Grilled steak with cheese
+SUB-016,Steak & Cheese Footlong,Sandwich,Footlong,Subway,13.50,Footlong,None,Gluten|Dairy,760,Grilled steak with cheese
+SUB-017,Chips - Regular,Side,Snack,Subway,1.95,Regular,Vegan,,230,Lays potato chips
+SUB-018,Cookie - Chocolate Chip,Dessert,Bakery,Subway,1.50,Regular,Vegetarian,Gluten|Dairy|Egg,220,Freshly baked cookie
+SUB-019,Cookie - Oatmeal Raisin,Dessert,Bakery,Subway,1.50,Regular,Vegetarian,Gluten|Dairy|Egg,200,Freshly baked cookie
+SUB-020,Fountain Drink,Beverage,Soda,Subway,2.25,Regular,Vegan,,varies,Coca-Cola products
+VAL-001,Avocado Toast,Breakfast,Toast,Valley Cafe,8.95,Regular,Vegan,Gluten,350,Smashed avocado on multigrain toast
+VAL-002,Acai Bowl,Breakfast,Bowl,Valley Cafe,9.50,Regular,Vegan,,340,Acai with granola and fruit
+VAL-003,Greek Yogurt Parfait,Breakfast,Parfait,Valley Cafe,6.95,Regular,Vegetarian,Dairy,280,Yogurt with granola and berries
+VAL-004,Breakfast Burrito,Breakfast,Burrito,Valley Cafe,9.25,Regular,Vegetarian,Dairy|Gluten|Egg,480,Eggs cheese and vegetables
+VAL-005,Caesar Salad,Salad,Salad,Valley Cafe,8.50,Regular,Vegetarian,Dairy|Gluten|Fish,350,Romaine with parmesan and croutons
+VAL-006,Mediterranean Bowl,Entree,Bowl,Valley Cafe,11.25,Regular,Vegan,,520,Quinoa falafel hummus and vegetables
+VAL-007,Chicken Pesto Sandwich,Sandwich,Sandwich,Valley Cafe,10.50,Regular,None,Dairy|Gluten,590,Grilled chicken with pesto
+VAL-008,Veggie Wrap,Sandwich,Wrap,Valley Cafe,9.75,Regular,Vegan,Gluten,420,Hummus and fresh vegetables
+VAL-009,Soup - Tomato Basil,Soup,Soup,Valley Cafe,5.95,Cup,Vegan,,180,Creamy tomato basil soup
+VAL-010,Smoothie - Berry Blast,Beverage,Smoothie,Valley Cafe,6.95,Regular,Vegan,,240,Mixed berries smoothie
+VAL-011,Smoothie - Green Machine,Beverage,Smoothie,Valley Cafe,7.25,Regular,Vegan,,210,Spinach kale and fruit
+VAL-012,Espresso Single,Beverage,Coffee,Valley Cafe,2.75,Single,Vegan,,5,Single shot espresso
+VAL-013,Espresso Double,Beverage,Coffee,Valley Cafe,3.50,Double,Vegan,,10,Double shot espresso
+VAL-014,Oat Milk Latte,Beverage,Coffee,Valley Cafe,4.95,Regular,Vegan,,130,Espresso with oat milk
+VAL-015,Matcha Latte,Beverage,Tea,Valley Cafe,5.25,Regular,Vegan Option,Dairy (can sub),150,Matcha with steamed milk
+ENG-001,Drip Coffee,Beverage,Coffee,Engineering Lounge,2.50,12oz,Vegan,,5,Fresh drip coffee
+ENG-002,Energy Drink - Red Bull,Beverage,Energy,Engineering Lounge,3.95,8.4oz,Vegan,,110,Energy drink
+ENG-003,Monster Energy,Beverage,Energy,Engineering Lounge,3.95,16oz,Vegan,,210,Energy drink
+ENG-004,Protein Bar - Clif,Snack,Bar,Engineering Lounge,3.50,Regular,Vegan Option,,250,Energy protein bar
+ENG-005,Protein Bar - Quest,Snack,Bar,Engineering Lounge,3.95,Regular,None,Dairy,200,High protein low sugar bar
+ENG-006,Bagel with Cream Cheese,Breakfast,Breakfast,Engineering Lounge,4.25,Regular,Vegetarian,Dairy|Gluten,350,Plain bagel with cream cheese
+ENG-007,Instant Ramen Cup,Food,Instant,Engineering Lounge,3.95,Regular,Vegan Option,,380,Instant noodle cup
+ENG-008,Pop-Tarts,Snack,Pastry,Engineering Lounge,2.95,2 pack,Vegetarian,Gluten,400,Toaster pastry
+ENG-009,Trail Mix,Snack,Mix,Engineering Lounge,3.50,4oz,Vegan,Tree Nuts,180,Mixed nuts and dried fruit
+ENG-010,Bottled Water,Beverage,Water,Engineering Lounge,1.95,16.9oz,Vegan,,0,Dasani water
+LNK-001,Cheese Pizza Slice,Food,Pizza,Late Night,3.95,Slice,Vegetarian,Dairy|Gluten,285,Classic cheese pizza
+LNK-002,Pepperoni Pizza Slice,Food,Pizza,Late Night,4.25,Slice,Contains Pork,Dairy|Gluten|Pork,300,Pepperoni pizza
+LNK-003,Veggie Pizza Slice,Food,Pizza,Late Night,4.25,Slice,Vegetarian,Dairy|Gluten,270,Vegetable topped pizza
+LNK-004,Mozzarella Sticks,Appetizer,Fried,Late Night,6.50,6 pieces,Vegetarian,Dairy|Gluten,560,Fried mozzarella sticks
+LNK-005,Chicken Tenders,Entree,Fried,Late Night,8.95,5 pieces,Contains Meat,Gluten,550,Breaded chicken tenders
+LNK-006,French Fries,Side,Fried,Late Night,4.50,Large,Vegan,,480,Crispy french fries
+LNK-007,Onion Rings,Side,Fried,Late Night,5.25,Regular,Vegan,Gluten,380,Breaded onion rings
+LNK-008,Buffalo Wings,Entree,Wings,Late Night,10.95,8 pieces,Contains Meat,,560,Spicy buffalo wings
+LNK-009,BBQ Wings,Entree,Wings,Late Night,10.95,8 pieces,Contains Meat,,580,BBQ glazed wings
+LNK-010,Nachos,Appetizer,Snack,Late Night,7.95,Regular,Vegetarian,Dairy,630,Chips with cheese and toppings
+LNK-011,Loaded Fries,Side,Fried,Late Night,7.50,Regular,Vegetarian,Dairy,720,Fries with cheese and bacon bits
+LNK-012,Quesadilla,Entree,Mexican,Late Night,8.50,Regular,Vegetarian,Dairy|Gluten,640,Cheese quesadilla
+DH-ENTRY,Dining Hall Entry,Entry,Meal Swipe,Dining Hall,0.00,Entry,All Options,,varies,All-you-care-to-eat buffet entry
+DH-GUEST,Guest Meal,Entry,Guest,Dining Hall,15.00,Entry,All Options,,varies,Guest entry to dining hall
+KSK-001,Bottled Water,Beverage,Water,Smart Kiosk,1.95,16.9oz,Vegan,,0,Dasani bottled water
+KSK-002,Coca-Cola,Beverage,Soda,Smart Kiosk,2.50,20oz,Vegan,,240,Coca-Cola soda
+KSK-003,Diet Coke,Beverage,Soda,Smart Kiosk,2.50,20oz,Vegan,,0,Diet Coca-Cola
+KSK-004,Sprite,Beverage,Soda,Smart Kiosk,2.50,20oz,Vegan,,230,Sprite lemon-lime soda
+KSK-005,Gatorade - Orange,Beverage,Sports,Smart Kiosk,2.95,20oz,Vegan,,140,Orange Gatorade
+KSK-006,Gatorade - Blue,Beverage,Sports,Smart Kiosk,2.95,20oz,Vegan,,140,Blue Gatorade
+KSK-007,Red Bull,Beverage,Energy,Smart Kiosk,3.95,8.4oz,Vegan,,110,Red Bull energy drink
+KSK-008,Monster,Beverage,Energy,Smart Kiosk,3.95,16oz,Vegan,,210,Monster energy drink
+KSK-009,Lays Chips - Classic,Snack,Chips,Smart Kiosk,2.25,Regular,Vegan,,160,Classic Lays chips
+KSK-010,Lays Chips - BBQ,Snack,Chips,Smart Kiosk,2.25,Regular,Vegan,,150,BBQ flavored chips
+KSK-011,Doritos - Nacho Cheese,Snack,Chips,Smart Kiosk,2.50,Regular,None,Dairy,150,Nacho cheese Doritos
+KSK-012,Cheetos,Snack,Chips,Smart Kiosk,2.50,Regular,None,Dairy,160,Cheetos cheese puffs
+KSK-013,Pretzels,Snack,Snack,Smart Kiosk,2.25,Regular,Vegan,Gluten,110,Twisted pretzels
+KSK-014,Kind Bar - Almond,Snack,Bar,Smart Kiosk,2.95,Regular,Vegan,Tree Nuts,200,Almond and sea salt bar
+KSK-015,Clif Bar,Snack,Bar,Smart Kiosk,2.95,Regular,Vegan Option,,250,Energy bar
+KSK-016,Nature Valley Granola,Snack,Bar,Smart Kiosk,2.25,2 bars,Vegetarian,Tree Nuts,190,Granola bars
+KSK-017,Cup Noodles,Food,Instant,Smart Kiosk,3.50,Regular,None,Gluten|Soy,290,Instant ramen cup
+KSK-018,Fruit Cup - Mixed,Snack,Fruit,Smart Kiosk,3.95,Regular,Vegan,,70,Mixed fruit cup
+KSK-019,Fruit Cup - Pineapple,Snack,Fruit,Smart Kiosk,3.95,Regular,Vegan,,70,Pineapple fruit cup
+KSK-020,Protein Shake - Premier,Beverage,Protein,Smart Kiosk,4.50,11oz,None,Dairy,160,Chocolate protein shake
+KSK-021,Trail Mix,Snack,Mix,Smart Kiosk,3.25,4oz,Vegan,Tree Nuts,180,Mixed nuts and fruit
+KSK-022,Beef Jerky,Snack,Jerky,Smart Kiosk,5.95,Regular,Contains Meat,Soy,80,Original beef jerky
+KSK-023,Pop-Tarts,Snack,Pastry,Smart Kiosk,2.50,2 pack,Vegetarian,Gluten,400,Frosted strawberry
+KSK-024,Rice Krispies Treat,Snack,Treat,Smart Kiosk,1.95,Regular,Vegetarian,Dairy,90,Rice cereal treat
+KSK-025,M&Ms,Snack,Candy,Smart Kiosk,2.25,Regular,Vegetarian,Dairy|Soy,240,Milk chocolate candies
+KSK-026,Skittles,Snack,Candy,Smart Kiosk,2.25,Regular,Vegan,,250,Fruit flavored candies
+KSK-027,Snickers,Snack,Candy,Smart Kiosk,2.25,Regular,None,Dairy|Peanuts|Soy,250,Chocolate peanut bar
+KSK-028,Reeses,Snack,Candy,Smart Kiosk,2.25,Regular,None,Dairy|Peanuts|Soy,210,Peanut butter cups
+KSK-029,Twix,Snack,Candy,Smart Kiosk,2.25,Regular,None,Dairy|Gluten|Soy,286,Caramel cookie bar
+KSK-030,Kit Kat,Snack,Candy,Smart Kiosk,2.25,Regular,None,Dairy|Gluten|Soy,210,Chocolate wafer bar
