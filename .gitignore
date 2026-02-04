@@ -219,9 +219,13 @@ config/*.json
 .env.*
 
 # Data files (too large for git)
-data/raw/**
-data/staging/**
-data/processed/**
+# Ignore all files in these directories but keep directory structure
+data/raw/*
+!data/raw/.gitkeep
+data/staging/*
+!data/staging/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
 *.csv
 !data/seed/*.csv
 
