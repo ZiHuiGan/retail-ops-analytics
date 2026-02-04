@@ -1,0 +1,17 @@
+name: retail-ops
+channels:
+  - defaults
+dependencies:
+  - python=3.13.5
+  - pip
+  - pip:
+    - dbt-bigquery==1.7.4
+    - google-cloud-bigquery==3.14.1
+    - pandas==2.1.4
+    - numpy==1.26.2
+    - pyarrow>=10.0.0
+    - python-dotenv==1.0.0
+    - pyyaml==6.0.1
+    - black==23.12.1
+    - flake8==7.0.0
+    - pytest==7.4.3
