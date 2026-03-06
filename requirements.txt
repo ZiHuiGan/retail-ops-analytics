@@ -15,3 +15,4 @@ pyyaml==6.0.1
 black==23.12.1
 flake8==7.0.0
 pytest==7.4.3
+sqlfluff>=4.0.0
