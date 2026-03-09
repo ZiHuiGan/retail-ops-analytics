@@ -1,0 +1,41 @@
+---
+description: Retail Ops / CVU Dining 项目约定与今日学习要点
+globs: 
+alwaysApply: true
+---
+
+# Retail Ops Analytics - 项目约定与学习要点
+
+## 今日学习要点（Data Profiling + dbt Staging/Marts）
+
+### 1. Data Profiling 流程
+- **SQL 脚本**：`sql/profiling/run_all_profiling.sql`（或 `cvu_dining/analyses/run_all_profiling.sql`）包含 Section 1–7，在 BigQuery Console 中分段运行。
+- **Section 7** 用 SQL 直接计算数据质量 0–100 分：Completeness、Validity、Consistency、Uniqueness、Timeliness、Accuracy；结果填到 `DATA_PROFILE.md` 的 Executive Summary、Scorecard、Metrics Summary。
+- **报告位置**：主报告在项目根目录 `DATA_PROFILE.md`；分析/脚本可放在 `cvu_dining/analyses/`（含 BIGQUERY_PROFILING_GUIDE.md、run_all_profiling.sql）。
+
+### 2. BigQuery / SQL 约定
+- 列名含空格或特殊字符时用反引号：\`Order ID\`, \`Order Date\`, \`Payment Method\`。
+- 金额/数字从字符串解析时用 \`SAFE_CAST(REPLACE(REPLACE(Total, '$', ''), ',', '') AS FLOAT64)\`。
+- 日期多格式时用 \`CASE WHEN ... LIKE '%/%' THEN PARSE_DATE('%m/%d/%Y', col) ...\` 统一解析。
+- Stripe 的 \`created\` 为 Unix 秒时用 \`TIMESTAMP_SECONDS(created)\` 转成时间戳。
+
+### 3. SQLFluff 与 dbt 模型
+- 项目内使用 **SQLFluff** 做 SQL 检查；BigQuery 源表列名带空格/大小写，会触发 L010/L011 等规则。
+- 在 \`cvu_dining/.sqlfluff\` 中已配置 \`exclude_rules = L010,L011,L036,L039\`，避免对合法 BigQuery/dbt 列名误报。
+- 写 dbt 模型时：关键字大写（SELECT/AS/WHEN/THEN/AND），去掉行尾空格，CASE/THEN 换行缩进一致；staging 的 source CTE 尽量显式列清单而非 \`SELECT *\`。
+
+### 4. dbt 项目结构（cvu_dining）
+- **Staging**：\`models/staging/stg_*.sql\`，\`+materialized: view\`，\`+schema: staging_cvu_dining\`；清洗源表、统一日期/金额/venue。
+- **Marts**：\`models/marts/\`，\`+materialized: table\`，\`+schema: marts_cvu_dining\`；如 \`dim_fiscal_calendar.sql\` 使用 macro \`get_fiscal_week_start_date\`（周四为一周起点）。
+- **Macros**：\`macros/fiscal_calendar.sql\` 提供 \`get_fiscal_week_start_date\`、\`get_fiscal_week_start_timestamp\`（4am 逻辑）、\`get_fiscal_week_id\`。
+- **Sources**：\`models/staging/_sources.yml\` 中 \`raw_cvu_dining\` 的 tables 需写清 Known Issues（日期格式、NULL、单位等），便于 staging 和文档一致。
+
+### 5. 数据源已知问题（来自 DATA_PROFILE）
+- **Grubhub**：日期格式混用、Venue 命名不一致（24→18 归一化）、Customer/Meal Plan ID 空值较多。
+- **Mashgin**：\`transaction_id\` 重复（需业务规则决定去重方式）、\`venue_name\` 约 9.44% 为空。
+- **Stripe**：\`created\` 为 Unix 秒；仅对 \`payment_intent.succeeded\` 算收入。
+- **Dining Hall**：无严重 DQ 问题；Plan ID/Date/Swipes 需与 seeds 或 reference 一致。
+
+### 6. 提交与仓库
+- 分析类文件放在 \`cvu_dining/analyses/\` 或 \`sql/profiling/\`，与 \`DATA_PROFILE.md\` 更新一起提交。
+- 不提交 \`.claude/\`、本地凭证、\`*.json\`（除 seed 允许的）、\`data/raw\` 大文件；\`cvu_dining/.sqlfluff\` 要提交以便团队统一 lint。

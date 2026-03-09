@@ -1,0 +1,113 @@
+version: 2
+
+sources:
+  - name: raw_cvu_dining
+    description: "Raw data from CSV/JSON uploads to BigQuery"
+    database: retail-ops-analytics
+    schema: raw_cvu_dining
+    
+    tables:
+      - name: grubhub_sales_raw
+        description: |
+          Grubhub retail dining transactions.
+          
+          Known Issues:
+          - Mixed date formats (MM/DD/YYYY, MM-DD-YYYY, YYYY-MM-DD)
+          - Venue names have spacing variations
+          - Currency fields contain $ and commas
+        
+        columns:
+          - name: Order ID
+            description: "Unique order identifier from Grubhub"
+            
+          - name: Order Date
+            description: "Transaction date - requires parsing"
+            
+          - name: Venue
+            description: "Location name - needs standardization"
+            
+          - name: Product Name
+            description: "Item purchased"
+            
+          - name: Quantity
+            description: "Number of items"
+            
+          - name: Total
+            description: "Total amount with $ and comma formatting"
+            
+          - name: Customer ID
+            description: "Customer identifier - NULL for cash/guest"
+            
+          - name: Meal Plan ID
+            description: "Meal plan used - NULL for non-meal-plan payments"
+            
+          - name: Payment Method
+            description: "Payment type"
+      
+      - name: mashgin_transactions_raw
+        description: |
+          Mashgin smart kiosk transactions.
+          
+          Known Issues:
+          - Timestamps in UTC (need EST conversion)
+          - Items stored as array (need UNNEST)
+          - 10% NULL venue_name
+        
+        columns:
+          - name: transaction_id
+            description: "Unique transaction identifier"
+            
+          - name: kiosk_id
+            description: "Kiosk machine identifier"
+            
+          - name: timestamp
+            description: "Transaction timestamp in UTC"
+            
+          - name: venue_name
+            description: "Location name - may be NULL"
+            
+          - name: items
+            description: "ARRAY of product structs"
+      
+      - name: stripe_events_raw
+        description: |
+          Stripe payment webhook events.
+          
+          Known Issues:
+          - Amounts in cents (need /100 conversion)
+          - Duplicate events (created + succeeded)
+          - Data as nested STRUCT
+        
+        columns:
+          - name: id
+            description: "Stripe event ID"
+            
+          - name: type
+            description: "Event type (payment_intent.created, etc.)"
+            
+          - name: created
+            description: "Event timestamp"
+            
+          - name: data
+            description: "STRUCT containing payment details"
+      
+      - name: dining_hall_swipes_raw
+        description: |
+          Daily dining hall meal plan swipes.
+          
+          Known Issues:
+          - Malformed CSV (header on row 3)
+          - Aggregated data (not transactional)
+        
+        columns:
+          - name: Date
+            description: "Swipe date"
+            
+          - name: Plan ID
+            description: "Meal plan identifier"
+            
+          - name: Plan Name
+            description: "Meal plan display name"
+            
+          - name: Swipes
+            description: "Total swipes for this plan on this date"

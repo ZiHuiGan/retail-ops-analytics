@@ -1,0 +1,7 @@
+[sqlfluff]
+dialect = bigquery
+templater = dbt
+templater_dbt_project_dir = .
+
+# BigQuery/dbt: relax rules that conflict with source column names (spaces, mixed case)
+exclude_rules = L010,L011,L036,L039
