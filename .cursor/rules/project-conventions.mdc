@@ -9,9 +9,9 @@ alwaysApply: true
 ## 今日学习要点（Data Profiling + dbt Staging/Marts）
 
 ### 1. Data Profiling 流程
-- **SQL 脚本**：`sql/profiling/run_all_profiling.sql`（或 `cvu_dining/analyses/run_all_profiling.sql`）包含 Section 1–7，在 BigQuery Console 中分段运行。
-- **Section 7** 用 SQL 直接计算数据质量 0–100 分：Completeness、Validity、Consistency、Uniqueness、Timeliness、Accuracy；结果填到 `DATA_PROFILE.md` 的 Executive Summary、Scorecard、Metrics Summary。
-- **报告位置**：主报告在项目根目录 `DATA_PROFILE.md`；分析/脚本可放在 `cvu_dining/analyses/`（含 BIGQUERY_PROFILING_GUIDE.md、run_all_profiling.sql）。
+- **SQL 脚本**：\`cvu_dining/analyses/run_all_profiling.sql\` 包含 Section 1–7，在 BigQuery Console 中分段运行。
+- **Section 7** 用 SQL 直接计算数据质量 0–100 分：Completeness、Validity、Consistency、Uniqueness、Timeliness、Accuracy；结果填到 \`cvu_dining/analyses/DATA_PROFILE.md\` 的 Executive Summary、Scorecard、Metrics Summary。
+- **报告位置**：数据质量报告在 \`cvu_dining/analyses/DATA_PROFILE.md\`（根目录 \`DATA_PROFILE.md\` 已移除）。分析/脚本统一在 \`cvu_dining/analyses/\`（含 BIGQUERY_PROFILING_GUIDE.md、run_all_profiling.sql）。
 
 ### 2. BigQuery / SQL 约定
 - 列名含空格或特殊字符时用反引号：\`Order ID\`, \`Order Date\`, \`Payment Method\`。
@@ -44,5 +44,4 @@ alwaysApply: true
 - **Dining Hall**：无严重 DQ 问题；Plan ID/Date/Swipes 需与 seeds 或 reference 一致。
 
 ### 6. 提交与仓库
-- 分析类文件放在 \`cvu_dining/analyses/\` 或 \`sql/profiling/\`，与 \`DATA_PROFILE.md\` 更新一起提交。
-- 不提交 \`.claude/\`、本地凭证、\`*.json\`（除 seed 允许的）、\`data/raw\` 大文件；\`cvu_dining/.sqlfluff\` 要提交以便团队统一 lint。
+- 分析类文件与报告统一放在 \`cvu_dining/analyses/\`（DATA_PROFILE.md、run_all_profiling.sql、BIGQUERY_PROFILING_GUIDE.md）。不提交 \`.claude/\`、本地凭证、\`*.json\`（除 seed 允许的）、\`data/raw\` 大文件；\`cvu_dining/.sqlfluff\` 要提交以便团队统一 lint。
