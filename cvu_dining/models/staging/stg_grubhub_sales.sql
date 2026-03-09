@@ -33,8 +33,11 @@ cleaned AS (
             WHEN `Order Date` LIKE '%/%' THEN 
                 PARSE_DATE('%m/%d/%Y', `Order Date`)
             WHEN `Order Date` LIKE '%-%' 
-                AND LENGTH(`Order Date`) = 10 THEN
-                PARSE_DATE('%m-%d-%Y', `Order Date`)
+                AND `Order Date` LIKE '____-__-__' 
+                AND SUBSTR(`Order Date`, 1, 4) BETWEEN '2000' AND '2099' THEN
+                PARSE_DATE('%Y-%m-%d', `Order Date`)  -- YYYY-MM-DD
+            WHEN `Order Date` LIKE '%-%' THEN
+                PARSE_DATE('%m-%d-%Y', `Order Date`)  -- MM-DD-YYYY
             ELSE 
                 PARSE_DATE('%Y-%m-%d', `Order Date`)
         END AS order_date,
@@ -98,4 +101,4 @@ final AS (
 
 )
 
-SELECT * FROM final;
+SELECT * FROM final

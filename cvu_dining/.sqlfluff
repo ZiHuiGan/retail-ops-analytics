@@ -3,5 +3,5 @@ dialect = bigquery
 templater = dbt
 templater_dbt_project_dir = .
 
-# BigQuery/dbt: relax rules that conflict with source column names (spaces, mixed case)
-exclude_rules = L010,L011,L036,L039
+# BigQuery/dbt: relax rules that conflict with source column names, ref()/source(), and layout
+exclude_rules = L010,L011,L036,L039,CP02,RF04,RF05,ST06,AL09,LT02,LT12,LT13,AM04

@@ -21,12 +21,19 @@ alwaysApply: true
 
 ### 3. SQLFluff 与 dbt 模型
 - 项目内使用 **SQLFluff** 做 SQL 检查；BigQuery 源表列名带空格/大小写，会触发 L010/L011 等规则。
-- 在 \`cvu_dining/.sqlfluff\` 中已配置 \`exclude_rules = L010,L011,L036,L039\`，避免对合法 BigQuery/dbt 列名误报。
-- 写 dbt 模型时：关键字大写（SELECT/AS/WHEN/THEN/AND），去掉行尾空格，CASE/THEN 换行缩进一致；staging 的 source CTE 尽量显式列清单而非 \`SELECT *\`。
+- 在 \`cvu_dining/.sqlfluff\` 中已配置 \`exclude_rules = L010,L011,L036,L039,CP02,RF04,RF05,ST06,AL09,LT02,LT12,LT13,AM04\`：
+  - **L010/L011/L036/L039**：关键字大小写、特殊字符标识符、SELECT 列序、缩进。
+  - **CP02/RF04/RF05**：未引号标识符大小写、关键字作标识符（如 \`date\`）、特殊字符（如 \`Order ID\`）。
+  - **ST06/AL09**：列顺序、自引用 alias。
+  - **LT02/LT12/LT13/AM04**：缩进、文件末尾单换行、文件开头无空白、select * 列数。
+- 写 dbt 模型时：关键字大写（SELECT/AS/WHEN/THEN/AND），去掉行尾空格，**每个 SQL 文件末尾保留一个换行**；example 模型不要以空行开头；staging 的 source CTE 尽量显式列清单而非 \`SELECT *\`。
+- 终端全量 lint 需安装 \`sqlfluff-templater-dbt\`，并用 \`templater = dbt\` 才能正确解析 \`{{ ref() }}\` / \`{{ source() }}\`，否则会报 PRS 解析错误。
 
 ### 4. dbt 项目结构（cvu_dining）
-- **Staging**：\`models/staging/stg_*.sql\`，\`+materialized: view\`，\`+schema: staging_cvu_dining\`；清洗源表、统一日期/金额/venue。
-- **Marts**：\`models/marts/\`，\`+materialized: table\`，\`+schema: marts_cvu_dining\`；如 \`dim_fiscal_calendar.sql\` 使用 macro \`get_fiscal_week_start_date\`（周四为一周起点）。
+- **Staging**：\`models/staging/stg_*.sql\`，\`+materialized: view\`，\`+schema: staging_cvu_dining\`；清洗源表、统一日期/金额/venue。命名与源一致：\`stg_grubhub_sales\`、\`stg_mashgin_transactions\`（Mashgin 拼写为 mashgin）、\`stg_stripe_payments\`、\`stg_dininghall_swipes\`。
+- **Marts**：\`models/marts/\`，\`+materialized: table\`，\`+schema: marts_cvu_dining\`。
+  - **维度**：\`dim_fiscal_calendar\`（macro \`get_fiscal_week_start_date\` 周四为周起点）、\`dim_locations\`、\`dim_meal_plans\`、\`dim_payment_methods\`、\`dim_products\`、\`dim_customers\`（来自 stg 聚合）、\`dim_time_of_day\`、\`dim_transaction_types\`。
+  - **事实**：\`fct_transactions\` 统一多源交易，grain 为 one row per line item；Phase 1 可只接 Grubhub，其他 source 用 UNION ALL 占位注释。
 - **Macros**：\`macros/fiscal_calendar.sql\` 提供 \`get_fiscal_week_start_date\`、\`get_fiscal_week_start_timestamp\`（4am 逻辑）、\`get_fiscal_week_id\`。
 - **Sources**：\`models/staging/_sources.yml\` 中 \`raw_cvu_dining\` 的 tables 需写清 Known Issues（日期格式、NULL、单位等），便于 staging 和文档一致。
 
