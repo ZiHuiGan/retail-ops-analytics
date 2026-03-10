@@ -76,12 +76,11 @@ fiscal_weeks AS (
             AS is_current_month,
         
         -- Current year flag
-        EXTRACT(YEAR FROM date) = EXTRACT(YEAR FROM CURRENT_DATE()) 
-            AS is_current_year
-        
+        EXTRACT(YEAR FROM date) = EXTRACT(YEAR FROM CURRENT_DATE()) AS is_current_year
+
     FROM date_spine
 
 )
 
 SELECT * FROM fiscal_weeks
-ORDER BY date;
+ORDER BY date

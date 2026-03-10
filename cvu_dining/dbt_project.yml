@@ -34,3 +34,8 @@ models:
 seeds:
   cvu_dining:
     +schema: seeds_cvu_dining
+    meal_plans:
+      +column_types:
+        dining_dollars: FLOAT64
+        convenience_points: FLOAT64
+        price_per_semester: FLOAT64

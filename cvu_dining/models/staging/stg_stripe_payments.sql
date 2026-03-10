@@ -67,7 +67,7 @@ final AS (
     SELECT * FROM cleaned
     WHERE payment_intent_id IS NOT NULL
         AND amount_usd IS NOT NULL
-        AND amount_usd > 0
+        -- Allow zero/negative for refund detection in fct (amount_usd < 0 -> TXN-REFUND)
 
 )
 

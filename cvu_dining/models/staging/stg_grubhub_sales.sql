@@ -97,7 +97,7 @@ final AS (
     WHERE order_id IS NOT NULL
         AND order_date IS NOT NULL
         AND total_amount IS NOT NULL
-        AND total_amount >= 0
+        -- Allow negative amounts (refunds) to flow to fct for transaction_type_id = TXN-REFUND
 
 )
 
