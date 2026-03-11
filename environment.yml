@@ -1,17 +1,19 @@
 name: retail-ops
 channels:
+  - conda-forge
   - defaults
 dependencies:
   - python=3.13.5
   - pip
   - pip:
-    - dbt-bigquery==1.7.4
+    - dbt-bigquery==1.8.2
     - google-cloud-bigquery==3.14.1
-    - pandas==2.1.4
-    - numpy==1.26.2
-    - pyarrow>=10.0.0
+    - pandas==2.2.3
+    - numpy>=2.0.0
+    - pyarrow>=16.0.0
     - python-dotenv==1.0.0
     - pyyaml==6.0.1
     - black==23.12.1
     - flake8==7.0.0
     - pytest==7.4.3
+    - sqlfluff>=4.0.0
